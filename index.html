@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        .container {
+            display: flex;
+            margin: 150px 150px;
+        }
+        
+        .container1 {
+            background-color: rgb(53, 19, 80);
+            display: grid;
+            grid-template-areas: "header header .""text text .""mini1 mini2 mini3";
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom-left-radius: 3%;
+            border-top-left-radius: 3%;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        
+        div.container2 {
+            background-color: rgb(163, 78, 184);
+            border-top-right-radius: 3%;
+            border-bottom-right-radius: 3%;
+        }
+        
+        #landing-header {
+            grid-area: header;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 60px 0px 0px 60px;
+        }
+        
+        #landing-text {
+            grid-area: text;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px 80px 0px 60px;
+            line-height: 30px;
+        }
+        
+        #landing-image {
+            border-top-right-radius: 3%;
+            border-bottom-right-radius: 3%;
+            opacity: 0.6;
+        }
+        
+        #mini1 {
+            grid-area: mini1;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 60px;
+        }
+        
+        #mini2 {
+            grid-area: mini2;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #mini3 {
+            grid-area: mini3;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        mark.purple {
+            color: rgb(163, 78, 184);
+            background-color: transparent;
+        }
+        
+        mark.text-accent {
+            background: none;
+            color: rgb(233, 233, 233);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            text-align: left;
+            font-size: 25px;
+        }
+        
+        p.text-upper {
+            margin-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="container1">
+            <h1 id="landing-header"> Get <mark class="purple">insights</mark> that help<br> your business grow.</h1>
+
+            <p id="landing-text">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+
+            </p>
+
+            <div id="mini1">
+                <mark class="text-accent">10k+</mark>
+                <p class="text-upper">COMPANIES</p>
+            </div>
+            <div id="mini2"><mark class="text-accent">314 </mark>
+                <p class="text-upper">TEMPLATES</p>
+            </div>
+            <div id="mini3"><mark class="text-accent">12M+</mark>
+                <p class="text-upper">QUERIES</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <img id="landing-image" src="images\image-header-desktop.jpg " alt="People Working at A Company ">
+        </div>
+
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge " target="_blank ">Frontend Mentor</a>. Coded by <a href="# ">Mladenka</a>.
+    </div>
+</body>
+
+</html>
